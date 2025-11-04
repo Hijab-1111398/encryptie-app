@@ -1,0 +1,91 @@
+        body {
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            font-family: 'Press Start 2P', cursive;
+            color: #00ffea;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 20px;
+            min-height: 100vh;
+        }
+
+        .title {
+            font-size: 2em;
+            color: black;
+            text-shadow:
+                0 0 5px #00ffea,
+                0 0 10px #00ffea,
+                0 0 20px #00ffea,
+                0 0 40px #0ff;
+            margin-bottom: 30px;
+        }
+
+        .container {
+            display: flex;
+            gap: 50px;
+            flex-wrap: wrap;
+            /* zorgt dat het op mobiel netjes stacked wordt */
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .instructions {
+            flex: 1;
+            min-width: 250px;
+            padding: 20px;
+            border: 2px solid #00ffea;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.6);
+            line-height: 1.6;
+        }
+
+        .app {
+            flex: 1;
+            min-width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        textarea,
+        input[type="password"] {
+            width: 400px;
+            max-width: 90%;
+            padding: 15px;
+            margin: 10px 0;
+            border: 2px solid #00ffea;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #00ffea;
+            font-family: 'Courier New', monospace;
+            font-size: 1em;
+            box-shadow: 0 0 10px #00ffea;
+            resize: none;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+            gap: 15px;
+        }
+
+        button {
+            padding: 12px 25px;
+            border: 2px solid #00ffea;
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            font-family: 'Press Start 2P', cursive;
+            font-weight: bold;
+            cursor: pointer;
+            text-shadow: 0 0 5px #00ffea;
+            transition: 0.3s;
+
+        }
+
+        .button:hover {
+            background-color: #00ffea;
+            color: #000;
+            box-shadow: 0 0 20px #00ffea;
+        }
